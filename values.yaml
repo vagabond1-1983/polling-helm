@@ -2,10 +2,10 @@ expose:
   type: ingress
   tls:
     enabled: false
-    secretName: ""
+    secretName: kongs-info-tls
   ingress:
     hosts:
-      ui: ui.polling.domain
+      ui: polling-ui.kongs.info
     annotations:
       kubernetes.io/ingress.class: nginx
   nodePort:
